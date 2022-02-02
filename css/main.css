@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+body{
+    min-width: 580px;
+    background-color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-image: url("https://cutewallpaper.org/21/dark-gradient-backgrounds/Black-Gradient-Wallpaper-29-images-on-Genchi.info.jpg");
+    background-size: cover;
+    background-color: grey;
+}
+
+
+.big{   
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.right{
+    width: 94%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo{
+    padding: 20px;
+    padding-left: 0;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.navbar-menu{
+    display: flex;
+}
+
+.element{
+    padding-top: 10px;
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;  
+    padding: 20px;
+    font-size: 16px;
+}
+
+.element :hover{
+    border-bottom: white 1px solid;
+    color: rgba(255, 255, 255, 0.473);
+
+}
+
+
+
+.element:nth-child(6) :hover{
+    border-bottom: 0;
+}
+
+.nav-link > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/*      FOOTER */
+
+.foot{
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255, 255, 255, 0.26);
+    height: 100vh;
+    
+}
+
+.foot-icon{
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.foot-icon > img{
+    width: 50px;
+    height: 50px;
+}
+
+.foot-icon > img :hover{
+    opacity: .8;
+}
+
+.foot-menu{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.foot-menu > li > a{
+    display: inline-block;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.foot-menu > li > a:hover{
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.foot-menu > li{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+/*    SECTION    */
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.548);
+    margin: 0;
+    padding: 0;
+    /* opacity: .6; */
+}
+
+section > div > img{
+    width: 152px;
+    height: 152px;
+    opacity: .8;
+}
+
+section > div > img:hover{
+    opacity: 1;
+}
+
+section > div{
+    color: white;
+}
+
+section  > div:nth-child(1) >h6{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section  > div:nth-child(1) >p:nth-child(3){
+    font-weight: 700;
+}
+
+section  > div:nth-child(2) >p:nth-child(2){
+    font-weight: 700;
+}
+
+
+section  > div:nth-child(4) > h6{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+section  > div:nth-child(4) > p{
+    width: 400px;
+    margin-bottom: 8px;
+}
+
+section  > div:nth-child(4) > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    /* margin-top: 18px; */
+}
+
+
+/* MAIN */
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+main > .content{
+    margin-right: 50px;
+}
+
+main >.content >  h2{
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    margin-bottom: 20px;
+    
+}
+
+main >.content >  p{
+    color: white;
+    width: 530px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main >.content >  p > span{
+    font-weight: 700;
+}
+
+main > .title{
+    width: 200px;
+    border-top: white solid 2px;
+    padding-top: 30px;
+}
+
+main > .title h5{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+main > .title > p{
+    color: white;
+    opacity: .6;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:1050px) {
+
+    .title{
+        border-top: 0px solid der;
+    }
+
+    section  > div:nth-child(4) > p{
+        width: 200px;
+    }
+
+
+    /* .big{
+        flex-direction: row;
+    } */
+}
+
+@media screen and (max-width:950px) {
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content  > h2{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    section > div:nth-child(2){
+        display: none;
+    }
+    .big{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .foot{
+        flex-direction: row;
+        border: none;
+        height: 20px;
+    }
+
+    .foot-icon{
+        display: none;
+    }
+
+    .foot-menu{
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+
+    .foot-menu > li{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .foot-menu > li > a{
+
+        transform: rotate(0deg);
+    }
+
+    .nav-link{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    section{
+        margin-top: 80px;
+    }
+}
